@@ -1,2 +1,9 @@
-ALBUM SHOW PAGE!!!
+<h4>{{model.name}}</h4>
+
+songs:
+<ul>
+  {{#each model.songs as |song|}}
+    <li>{{song.name}}</li>
+  {{/each}}
+</ul>
 
