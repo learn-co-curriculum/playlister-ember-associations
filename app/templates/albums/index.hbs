@@ -2,7 +2,7 @@ Albums:
 <ul>
   {{#each model as |album|}}
   <li>
-    {{#link-to 'albums.album' album.id}}
+    {{#link-to 'albums.album' album}}
       {{album.name}}
     {{/link-to}}
   </li>

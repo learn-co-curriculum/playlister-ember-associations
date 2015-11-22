@@ -3,7 +3,7 @@
 songs:
 <ul>
   {{#each model.songs as |song|}}
-    <li>{{#link-to 'songs.song' song.id}}{{song.name}}{{/link-to}}</li>
+    <li>{{#link-to 'songs.song' song}}{{song.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 

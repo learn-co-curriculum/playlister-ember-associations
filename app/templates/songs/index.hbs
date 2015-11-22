@@ -2,7 +2,7 @@ Songs:
 <ul>
   {{#each model as |song|}}
   <li>
-    {{#link-to 'songs.song' song.id}}
+    {{#link-to 'songs.song' song}}
       {{song.name}}
     {{/link-to}}
   </li>
