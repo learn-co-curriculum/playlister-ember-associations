@@ -1,12 +1,36 @@
-import { moduleForModel, test } from 'ember-qunit';
+import { expect } from 'chai';
+import Ember from 'ember';
+import {
+  describeModel,
+  it
+} from 'ember-mocha';
 
-moduleForModel('song', 'Unit | Model | song', {
-  // Specify the other units that are required for this test.
-  needs: []
-});
+describeModel(
+  'song',
+  'Song',
+  {
+    // Specify the other units that are required for this test.
+      needs: ['model:artist', 'model:album']
+  },
+  function() {
+    // Replace this with your real tests.
+   
 
-test('it exists', function(assert) {
-  var model = this.subject();
-  // var store = this.store();
-  assert.ok(!!model);
-});
+    it('has a name', function() {
+      let song = this.subject({ name: "Hello" });
+      expect(song.get('name')).to.eq("Hello");
+    });
+
+    it('should have many artists', function() {
+      const Song = this.store().modelFor('song');
+      const relationship = Ember.get(Song, 'relationshipsByName').get('artists');
+      expect(relationship.kind).to.eq("hasMany");
+    });
+
+    it('should belong to an album', function() {
+      const Song = this.store().modelFor('song');
+      const relationship = Ember.get(Song, 'relationshipsByName').get('album');
+      expect(relationship.kind).to.eq("belongsTo");
+    });
+  }
+);
