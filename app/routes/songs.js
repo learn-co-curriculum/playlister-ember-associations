@@ -1,7 +1,1 @@
-import Ember from 'ember';
-
-export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('song');
-  }
-});
+code your route handler here!

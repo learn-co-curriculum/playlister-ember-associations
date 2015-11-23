@@ -45,6 +45,11 @@ Generate an adapter with `ember generate adapter application`. Then, code your A
 
 * In `app/templates/application.hbs` you'll see a navbar with three list items. The list item with an `id` of `"artists"` should contain a link to the artists' index page. The same is true of the list items with `id`s of `"songs"` and `"albums"` respectively. 
 * In `app/templates/songs/index.hbs` we'll iterate over all of the songs and render a list of song names. Each list item will contain a song name, which should link to that song's show page. 
+* In `app/templates/songs/song.hbs`, we'll display the details of an individual song. Place the song's name inside the `<h4>` tags provides, render the song's album in the `<p>` tag provided. In the `<ul>` provided for you on, iterate over the song's artists and render the artist name, which should link to that artist's show page. 
+* In `app/templates/artists/index.hbs`, we'll iterate over all of the artists and render a list of their names. Each list item will contain an artist name, which should link to that artist's show page. 
+* In `app/templates/artists/artist.hbs`, we'll show the details of a given artist. This page will show their name, wrapped in the `<h4>` tags provided. Then, iterate over that artist's albums and render a list of album names. Each name should link to that album's show page.
+* In `app/templates/albums/index.hbs`, we'll iterate over all of the albums and render a list of their names. Each list item will contain an album name, which should link to that album's show page. 
+* In `app/templates/albums/album.hbs`, we'll show the details of a given album. This page will show the album name, in the `<h4>` tags provided. Then, iterave over that album's songs and render a list of song names. Each song name should link to that song's show page. 
 
 
 
