@@ -7,7 +7,7 @@
 
 1. Generate ember models
 2. Create the following relationships between them: has many, belongs to, many to many
-3. Wrrite routes that render templates that reflect these relationships
+3. Write routes that render templates that reflect these relationships
 
 ## Overview
 
