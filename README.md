@@ -26,7 +26,7 @@ You'll be connecting this Ember application to the Playlister API. This API is a
 ### Part I: Connecting to the API
 
 * Install Active Model Adapter addon: `ember install active-model-adapter` in your terminal.
-Generate an adapter with `ember generate adapter application`. Then, code your Active Model Adapter to connect to the `http:localhost:3000`, with a namespace of `api/v1`. 
+Generate an adapter with `ember generate adapter application`. Then, code your Active Model Adapter to connect to the `http://localhost:3000`, with a namespace of `api/v1`. 
 
 ### Defining The Models
 
