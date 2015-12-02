@@ -63,3 +63,5 @@ Generate an adapter with `ember generate adapter application`. Then, code your A
 
 
 
+
+<a href='https://learn.co/lessons/playlister-ember-associations' data-visibility='hidden'>View this lesson on Learn.co</a>
