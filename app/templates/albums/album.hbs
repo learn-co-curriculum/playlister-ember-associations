@@ -2,8 +2,7 @@
 
 songs:
 <ul>
-  {{#each model.songs as |song|}}
-    <li class="songs">{{#link-to 'songs.song' song}}{{song.name}}{{/link-to}}</li>
-  {{/each}}
+  iterate over the album's songs here. 
+    <li class="songs">render the song name, which should link to the song's show page, here.</li>
 </ul>
 
