@@ -36,7 +36,7 @@ Generate an adapter with `ember generate adapter application`. Then, code your A
 
 * Define your router in `app/router.js` to have a route for `/artists` and a route for an indivual artist, nested under `/artist`. Do the same for albums and songs. 
 * In `app/routes/artists.js`, define the route handler for the `/artists` route. Do the same for albums in `app/routes/albums.js` and songs in `app/routes/songs.js`. 
-* Define a route handler for an individual song in `app/routes/songs/song.js`. Do the same for artists in `app/routes/artists/artist.js` and albums in `app/routes/albums/alumb.js`. 
+* Define a route handler for an individual song in `app/routes/songs/song.js`. Do the same for artists in `app/routes/artists/artist.js` and albums in `app/routes/albums/album.js`. 
 
 ### Buidling our Templates
 
