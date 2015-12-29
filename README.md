@@ -38,7 +38,7 @@ Generate an adapter with `ember generate adapter application`. Then, code your A
 * In `app/routes/artists.js`, define the route handler for the `/artists` route. Do the same for albums in `app/routes/albums.js` and songs in `app/routes/songs.js`. 
 * Define a route handler for an individual song in `app/routes/songs/song.js`. Do the same for artists in `app/routes/artists/artist.js` and albums in `app/routes/albums/album.js`. 
 
-### Buidling our Templates
+### Building our Templates
 
 **Note:** The template files have been provided for you. They include starter code that our test suite relies on so don't change any of the code you'll find there. 
 
