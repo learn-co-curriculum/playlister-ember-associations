@@ -64,4 +64,4 @@ Generate an adapter with `ember generate adapter application`. Then, code your A
 
 
 
-<a href='https://learn.co/lessons/playlister-ember-associations' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/playlister-ember-associations' title='Ember Playlister Associations'>Ember Playlister Associations</a> on Learn.co and start learning to code for free.</p>
