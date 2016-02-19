@@ -18,6 +18,10 @@ Router.map(function() {
   this.route('collaborations', function() {
     this.route('collaboration', { path: '/:collaboration_id' });
   });
+  this.route('login');
+  this.route('users', function() {
+    this.route('user', { path '/:user_id' });
+  })
 });
 
 export default Router;

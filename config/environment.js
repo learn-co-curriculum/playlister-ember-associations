@@ -24,7 +24,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self'",
       'font-src': "'self'",
-      'connect-src': "'self' http://localhost:3000 https://mysterious-garden-7912.herokuapp.com",
+      'connect-src': "*",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline",
       'media-src': "'self'"
