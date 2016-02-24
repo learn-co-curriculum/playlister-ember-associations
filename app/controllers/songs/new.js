@@ -10,6 +10,8 @@ export default Ember.Controller.extend({
 
   actions: {
     save(){
+      // why require album object to be created and saved before it can be sent to Rails
+      //  with song? why not just send string of album title?
       let song = this.get('model');
       let album = this.store.createRecord('album', {name: this.get('albumName')});
       album.save().then((newAlbum)=>{ 
