@@ -10,8 +10,8 @@
         <li class="active" id="artists">{{link-to 'Artists' 'artists'}}</li>
         <li class="active" id="albums">{{link-to 'Albums' 'albums'}}</li>
         <li class="active" id="songs">{{link-to 'Songs' 'songs'}}</li>
-        {{#if currentUser}}
-          <li class="active"><a href="#">Hi, {{currentUser.email}}</a></li>
+        {{#if session.isAuthenticated}}
+          <li class="active"><a href="#">Hi, {{session.currentUser.email}}</a></li>
           <li class="active"><a href="#" {{action 'logout'}}>Logout</a></li>
         {{else}}
           <li class="active" id="songs">{{#link-to 'login'}}Login{{/link-to}}</li>

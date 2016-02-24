@@ -11,6 +11,7 @@ Router.map(function() {
   });
   this.route('songs', function() {
     this.route('song', { path: '/:song_id' });
+    this.route('new');
   });
   this.route('albums', function() {
     this.route('album', { path: '/:album_id' });
