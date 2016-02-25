@@ -10,11 +10,9 @@ export default Ember.Controller.extend({
 
     save(){
       let album = this.get('model');
-      let song = this.get('model').get('songs').objectAt(0);
-      song.save().then(()=>{
-
-        album.save();
-      })
+      album.save().then((newAlbum)=>{
+        this.transitionToRoute('albums.album', newAlbum);
+      });
 
     }
   }
