@@ -15,6 +15,7 @@ Router.map(function() {
   });
   this.route('albums', function() {
     this.route('album', { path: '/:album_id' });
+    this.route('new');
   });
   this.route('collaborations', function() {
     this.route('collaboration', { path: '/:collaboration_id' });
