@@ -7,6 +7,10 @@ export default Ember.Component.extend({
       this.attrs.triggerAddSong();
     },
 
+    increaseArtists(song){
+      this.attrs.triggerAddArtist(song);
+    },
+
     submit(){
       this.attrs.triggerSave();
     }

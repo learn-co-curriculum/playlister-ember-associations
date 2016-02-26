@@ -1,15 +1,24 @@
 <form>
-  {{input value=album.name class="form-control"}}
+  {{input value=album.name placeholder="album name" class="form-control"}}
   <br>
+  
   <button type="button" name="button" {{action "increaseSongs"}} class="btn btn-default">Add a new song</button>
+    
     {{#each album.songs as |song|}}
       <div class="form-group">
         {{input value=song.name class="form-control" placeholder="song name"}}
+        <br>
+        <button type="button" name="button" {{action "increaseArtists" song}} class="btn-xs btn-primary">add artist</button>
+
+        {{#each song.artists as |artist|}}
+          {{input value=artist.name class="form-control" placeholder="artist name"}}
+        {{/each}}
       </div>
     {{/each}}
 
-    <br>
-    <br>
+  <br>
+  <br>
+  
   <button type="submit" class="btn btn-default" {{action "submit"}}>create album</button>
 
 </form>
