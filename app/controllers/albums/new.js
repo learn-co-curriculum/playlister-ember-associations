@@ -6,7 +6,6 @@ export default Ember.Controller.extend({
       let album = this.get('model');
       let song = this.store.createRecord('song');
       album.get('songs').addObject(song);
-      song.destroy();
     }, 
 
     addArtist(song){
@@ -17,9 +16,9 @@ export default Ember.Controller.extend({
     save(){
       let album = this.get('model');
       album.save().then((newAlbum)=>{
-          this.transitionToRoute('albums.album', newAlbum.id);
+        newAlbum.get('songs').filterBy('id', null).invoke('deleteRecord');
+        this.transitionToRoute('albums.album', newAlbum.id);
       });
-
     }
   }
 });

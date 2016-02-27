@@ -4,9 +4,9 @@
   
   <button type="button" name="button" {{action "increaseSongs"}} class="btn btn-default">Add a new song</button>
     
-    {{#each album.songs as |song|}}
+    {{#each album.songs as |song index|}}
       <div class="form-group">
-        {{input value=song.name class="form-control" placeholder="song name"}}
+        Song No. {{item-number index}}: {{input value=song.name class="form-control" placeholder="song name"}}
         <br>
         <button type="button" name="button" {{action "increaseArtists" song}} class="btn-xs btn-primary">add artist</button>
 
