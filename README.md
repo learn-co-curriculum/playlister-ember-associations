@@ -19,7 +19,7 @@ In this lab you'll be working with the Playlister domain model, with a twist. He
 
 ### Before You Begin 
 
-You'll be connecting this Ember application to the Playlister API. This API is a Rails app. We'll have you run it on your own localhost:3000 to make the test suites run nice and fast. Go [here](https://github.com/learn-co-curriculum/ember-playlister-api) and clone down this Rails app. Bundle install, run `rake db:create`,  `rake db:migrate`, and `rake db:seed`. Then run `rails s` to get the API up and running. **Your Ember app will not work if you're API is not running on localhost:3000. 
+You'll be connecting this Ember application to the Playlister API. This API is a Rails app. We'll have you run it on your own localhost:3000 to make the test suites run nice and fast. Go [here](https://github.com/learn-co-curriculum/ember-playlister-api) and clone down this Rails app. Bundle install, run `rake db:create`,  `rake db:migrate`, and `rake db:seed`. Then run `rails s` to get the API up and running. **Your Ember app will not work if your API is not running on localhost:3000. 
 
 ## Instructions
 
@@ -65,3 +65,5 @@ Generate an adapter with `ember generate adapter application`. Then, code your A
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/playlister-ember-associations' title='Ember Playlister Associations'>Ember Playlister Associations</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/playlister-ember-associations'>Ember Model Associations</a> on Learn.co and start learning to code for free.</p>
