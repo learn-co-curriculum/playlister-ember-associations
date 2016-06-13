@@ -1,7 +1,10 @@
 Songs:
 <ul>
-  start your iteration here!
+  {{#each model as |song|}}
   <li class="songs">
-    render each individual song name here. The song name should also link to the song's show page.
+    {{#link-to 'songs.song' song}}
+      {{song.name}}
+    {{/link-to}}
   </li>
+  {{/each}}
 </ul>
