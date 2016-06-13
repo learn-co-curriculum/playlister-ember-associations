@@ -1,13 +1,11 @@
-<h4>{{model.name}}</h4>
+<h4>Put the artist's name here</h4>
 
 albums:
 <ul>
-  {{#each model.albums as |album|}}
+  iterate of the artist's albums
     <li class="albums">
-      {{#link-to 'albums.album' album.id}}
-        {{album.name}}
-      {{/link-to}}
+      place the album name here. the name should link to the album's show page.
     </li>
-  {{/each}}
+
 </ul>
 
