@@ -31,6 +31,7 @@ Generate an adapter with `ember generate adapter application`. Then, code your A
 ### Defining The Models
 
 * Define a songs, artists and albums model with the relationship described above. 
+* Use this resource to learn how to build your associations: https://guides.emberjs.com/v2.6.0/models/relationships/
 
 ### Defining the Routes
 

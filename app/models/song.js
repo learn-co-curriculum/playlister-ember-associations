@@ -1,6 +1,9 @@
-import DS from 'ember-data';
-export default DS.Model.extend({
-  name: DS.attr('string'),
-  artists: DS.hasMany('artist', { async: true }),
-  album: DS.belongsTo('album', { async: true })
+import Model from 'ember-data/model';
+import attr from 'ember-data/attr';
+import { belongsTo, hasMany } from 'ember-data/relationships';
+
+export default Model.extend({
+  name: attr('string'),
+  artists: hasMany('artist', { async: true }),
+  album: belongsTo('album', { async: true })
 });

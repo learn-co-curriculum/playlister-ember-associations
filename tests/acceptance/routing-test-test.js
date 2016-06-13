@@ -36,7 +36,7 @@ describe('Acceptance: RoutingTest', function() {
     andThen(function() {
       click('ul li#artists a');
       andThen(function() {
-        expect(find('ul li.artists').length).to.eq(161);
+        expect(find('ul li.artists').length).to.eq(197);
         expect(find('ul li.artists:first a').attr('href')).to.eq("/artists/1");
         expect(find('ul li.artists:first a').text().trim()).to.eq("Justin Bieber");
       });
@@ -63,7 +63,7 @@ describe('Acceptance: RoutingTest', function() {
     andThen(function() {
       click('ul li#songs a');
       andThen(function() {
-        expect(find('ul li.songs').length).to.eq(200);
+        expect(find('ul li.songs').length).to.eq(246);
         expect(find('ul li.songs:first a').attr('href')).to.eq("/songs/1");
         expect(find('ul li.songs:first a').text().trim()).to.eq("Sorry");
       });
@@ -92,7 +92,7 @@ describe('Acceptance: RoutingTest', function() {
     andThen(function() {
       click('ul li#albums a');
       andThen(function() {
-        expect(find('ul li.albums').length).to.eq(134);
+        expect(find('ul li.albums').length).to.eq(191);
         expect(find('ul li.albums:first a').attr('href')).to.eq("/albums/1");
         expect(find('ul li.albums:first a').text().trim()).to.eq("Purpose (Deluxe)");
       });
